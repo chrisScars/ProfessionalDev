@@ -17,54 +17,120 @@
         <link href="css/owl.theme.default.min.css" rel="stylesheet">
         <link href="css/templatemo-medic-care.css" rel="stylesheet">
         
-        <style>
+       <style>
+        .hero-photo-container {
+            position: relative;
+            width: 320px;
+            height: 320px;
+            margin: 0 auto;
+        }
+    
+        .hero-circular-photo {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 12px solid rgba(255, 255, 255, 0.95);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            transition: transform 0.4s ease;
+        }
+    
+        .hero-circular-photo:hover {
+            transform: scale(1.05);
+        }
+    
+        .hero-card {
+            background: rgba(255, 255, 255, 0.95);
+            color: #333;
+            padding: 40px;
+            border-radius: 20px;
+            max-width: 600px;
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.25);
+            margin: 0 auto;
+        }
+    
+        .domain-card {
+            cursor: pointer;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+            border-radius: 16px;
+        }
+    
+        .domain-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.12) !important;
+        }
+    
+        .domain-card .card-body {
+            padding: 1.5rem;
+        }
+    
+        .domain-card .card-title {
+            font-weight: 700;
+        }
+    
+        .domain-card .card-text {
+            min-height: 72px;
+        }
+    
+        .artifact-entry {
+            border-left: 4px solid #0d6efd;
+            background: #fff;
+            border-radius: 14px;
+            padding: 20px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+            margin-bottom: 18px;
+        }
+    
+        .artifact-semester {
+            display: inline-block;
+            background-color: #0d6efd;
+            color: #fff;
+            font-size: 0.8rem;
+            font-weight: 600;
+            padding: 6px 12px;
+            border-radius: 999px;
+            margin-bottom: 12px;
+        }
+    
+        .artifact-entry h5 {
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+    
+        .artifact-entry p {
+            margin-bottom: 14px;
+            color: #6c757d;
+        }
+    
+        .modal-content {
+            border-radius: 20px;
+            border: 0;
+        }
+    
+        .modal-header {
+            border-bottom: 1px solid rgba(0,0,0,0.08);
+        }
+    
+        .modal-title i {
+            color: #0d6efd;
+        }
+    
+        @media (max-width: 768px) {
             .hero-photo-container {
-                position: relative;
-                width: 320px;
-                height: 320px;
-                margin: 0 auto;
+                width: 260px;
+                height: 260px;
             }
-
-            .hero-circular-photo {
-                width: 100%;
-                height: 100%;
-                border-radius: 50%;
-                object-fit: cover;
-                border: 12px solid rgba(255, 255, 255, 0.95);
-                box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-                transition: transform 0.4s ease;
+            
+            .heroText h1 {
+                font-size: 2.5rem;
             }
-
-            .hero-circular-photo:hover {
-                transform: scale(1.05);
-            }
-
+    
             .hero-card {
-                background: rgba(255, 255, 255, 0.95);
-                color: #333;
-                padding: 40px;
-                border-radius: 20px;
-                max-width: 600px;
-                box-shadow: 0 25px 60px rgba(0, 0, 0, 0.25);
-                margin: 0 auto;
+                padding: 30px;
+                transform: translateY(20px);
             }
-
-            @media (max-width: 768px) {
-                .hero-photo-container {
-                    width: 260px;
-                    height: 260px;
-                }
-                
-                .heroText h1 {
-                    font-size: 2.5rem;
-                }
-
-                .hero-card {
-                    padding: 30px;
-                    transform: translateY(20px);
-                }
-            }
-        </style>
+        }
+</style>
     </head>
     
     <body id="top">
@@ -233,46 +299,73 @@
             </section>
 
             <section class="section-padding" id="domains">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12 text-center">
-                            <h2 class="mb-5">Professional Domains</h2>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-12 mb-4">
-                            <div class="card h-100 shadow-lg border-0">
-                                <div class="card-body">
-                                    <h5 class="card-title text-primary"><i class="bi-shield-check-fill me-2"></i> Values and Ethics</h5>
-                                    <p class="card-text text-muted"></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-12 mb-4">
-                            <div class="card h-100 shadow-lg border-0">
-                                <div class="card-body">
-                                    <h5 class="card-title text-primary"><i class="bi-lightbulb-fill me-2"></i> Knowledge and Research</h5>
-                                    <p class="card-text text-muted"></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-12 mb-4">
-                            <div class="card h-100 shadow-lg border-0">
-                                <div class="card-body">
-                                    <h5 class="card-title text-primary"><i class="bi-activity me-2"></i> Care Management</h5>
-                                    <p class="card-text text-muted mb-3"></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-12 mb-4">
-                            <div class="card h-100 shadow-lg border-0">
-                                <div class="card-body">
-                                    <h5 class="card-title text-primary"><i class="bi-person-lines-fill me-2"></i> Professional Identity</h5>
-                                    <p class="card-text text-muted"></p>
-                                </div>
-                            </div>
-                        </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2 class="mb-3">Professional Domains</h2>
+                <p class="text-muted mb-5">
+                    Select a professional domain to view semester-based artifacts, reflections, and supporting documents.
+                </p>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-12 mb-4">
+                <div class="card h-100 shadow-lg border-0 domain-card"
+                     onclick="openDomainModal('values-ethics')">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">
+                            <i class="bi-shield-check-fill me-2"></i> Values and Ethics
+                        </h5>
+                        <p class="card-text text-muted">
+                            Artifacts that demonstrate ethical decision-making, integrity, accountability, and professional nursing values.
+                        </p>
                     </div>
                 </div>
-            </section>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-12 mb-4">
+                <div class="card h-100 shadow-lg border-0 domain-card"
+                     onclick="openDomainModal('knowledge-research')">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">
+                            <i class="bi-lightbulb-fill me-2"></i> Knowledge and Research
+                        </h5>
+                        <p class="card-text text-muted">
+                            Coursework and evidence showing growth in research literacy, evidence-based practice, and academic inquiry.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-12 mb-4">
+                <div class="card h-100 shadow-lg border-0 domain-card"
+                     onclick="openDomainModal('care-management')">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">
+                            <i class="bi-activity me-2"></i> Care Management
+                        </h5>
+                        <p class="card-text text-muted mb-3">
+                            Documents reflecting patient-centered care, prioritization, clinical reasoning, and safe care delivery.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-12 mb-4">
+                <div class="card h-100 shadow-lg border-0 domain-card"
+                     onclick="openDomainModal('professional-identity')">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">
+                            <i class="bi-person-lines-fill me-2"></i> Professional Identity
+                        </h5>
+                        <p class="card-text text-muted">
+                            Artifacts that reflect leadership, self-awareness, role development, and growth as a future registered nurse.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
             <section class="section-padding" id="resume">
                 <div class="container text-center">
@@ -327,5 +420,117 @@
               });
             });
         </script>
+        <script>
+    const domainData = {
+        "values-ethics": {
+            title: "Values and Ethics",
+            description: "This section includes semester-based artifacts that demonstrate ethical reasoning, accountability, integrity, patient advocacy, and professional nursing values.",
+            icon: "bi-shield-check-fill",
+            artifacts: [
+                {
+                    semester: "Spring 2026",
+                    title: "Values and Ethics Reflection Paper",
+                    description: "This artifact highlights my understanding of nursing ethics, patient-centered care, and professional accountability during this semester.",
+                    file: "Assets/values-ethics/spring-2026-reflection.pdf"
+                }
+
+                /*
+                Add future entries like this:
+
+                ,{
+                    semester: "Fall 2026",
+                    title: "Ethical Case Study",
+                    description: "This artifact reflects my growth in applying ethical principles to patient care scenarios.",
+                    file: "Assets/values-ethics/fall-2026-case-study.pdf"
+                }
+                */
+            ]
+        },
+
+        "knowledge-research": {
+            title: "Knowledge and Research",
+            description: "This section showcases evidence-based practice, scholarly work, research assignments, and knowledge development throughout the nursing program.",
+            icon: "bi-lightbulb-fill",
+            artifacts: [
+                {
+                    semester: "Coming Soon",
+                    title: "Future Artifact",
+                    description: "Artifacts for this domain will be added as coursework and projects are completed.",
+                    file: ""
+                }
+            ]
+        },
+
+        "care-management": {
+            title: "Care Management",
+            description: "This section includes artifacts related to care planning, prioritization, clinical judgment, and the delivery of safe, effective nursing care.",
+            icon: "bi-activity",
+            artifacts: [
+                {
+                    semester: "Coming Soon",
+                    title: "Future Artifact",
+                    description: "Artifacts for this domain will be added as coursework and projects are completed.",
+                    file: ""
+                }
+            ]
+        },
+
+        "professional-identity": {
+            title: "Professional Identity",
+            description: "This section reflects role development, leadership, service, communication, and growth into the professional identity of a registered nurse.",
+            icon: "bi-person-lines-fill",
+            artifacts: [
+                {
+                    semester: "Coming Soon",
+                    title: "Future Artifact",
+                    description: "Artifacts for this domain will be added as coursework and projects are completed.",
+                    file: ""
+                }
+            ]
+        }
+    };
+
+    function openDomainModal(domainKey) {
+        const domain = domainData[domainKey];
+        const modalTitle = document.getElementById("domainModalLabel");
+        const modalDescription = document.getElementById("domainModalDescription");
+        const modalContent = document.getElementById("domainModalContent");
+
+        modalTitle.innerHTML = `<i class="bi ${domain.icon} me-2"></i>${domain.title}`;
+        modalDescription.textContent = domain.description;
+
+        modalContent.innerHTML = "";
+
+        domain.artifacts.forEach(artifact => {
+            const artifactHTML = document.createElement("div");
+            artifactHTML.className = "artifact-entry";
+
+            artifactHTML.innerHTML = `
+                <span class="artifact-semester">${artifact.semester}</span>
+                <h5>${artifact.title}</h5>
+                <p>${artifact.description}</p>
+                ${
+                    artifact.file
+                        ? `
+                        <div class="d-flex flex-wrap gap-2">
+                            <a href="${artifact.file}" target="_blank" class="btn btn-primary rounded-pill px-4">
+                                <i class="bi bi-file-earmark-pdf me-2"></i>View Document
+                            </a>
+                            <a href="${artifact.file}" download class="btn btn-outline-primary rounded-pill px-4">
+                                <i class="bi bi-download me-2"></i>Download
+                            </a>
+                        </div>
+                        `
+                        : `<span class="text-muted fst-italic">Document will be added in a future semester.</span>`
+                }
+            `;
+
+            modalContent.appendChild(artifactHTML);
+        });
+
+        const modal = new bootstrap.Modal(document.getElementById("domainModal"));
+        modal.show();
+    }
+</script>
     </body>
 </html>
